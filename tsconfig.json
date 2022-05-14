@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client"],
+    "types": ["vite/client", "jest"],
     "baseUrl": "src",
     "allowJs": false,
     "skipLibCheck": false,
@@ -17,7 +17,7 @@
     "noEmit": true,
     "jsx": "react",
     "paths": {
-      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"],
+      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
     }
   },
   "include": ["./src"],
