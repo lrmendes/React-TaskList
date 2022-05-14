@@ -6,13 +6,16 @@
     "start": "vite",
     "build": "npm run lint && tsc && vite build",
     "preview": "vite preview",
-    "test": "jest --coverage --passWithNoTests",
+    "test": "jest --coverage --coverageDirectory ../coverage --passWithNoTests",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "npm run lint:format && npm run lint:fix ",
+    "validate": "eslint ./src --ext .jsx,.js,.ts,.tsx && prettier --check \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "type-check": "tsc"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.7.0",
     "@mui/styled-engine-sc": "^5.7.0",
