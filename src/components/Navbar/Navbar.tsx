@@ -1,5 +1,6 @@
+import GitHubIcon from '@mui/icons-material/GitHub'
 import MenuIcon from '@mui/icons-material/Menu'
-import { IconButton, Toolbar, Typography } from '@mui/material'
+import { IconButton, Link, Toolbar, Typography } from '@mui/material'
 import * as React from 'react'
 
 import { NavbarContainer, NavbarStyled, NavbarTitleMenu } from './Navbar.styles'
@@ -30,6 +31,13 @@ const Navbar = ({ switchMenu }: Props) => {
               React Task List
             </Typography>
           </NavbarTitleMenu>
+          <Link
+            href={process.env.VITE_GITHUB_REPOSITORY}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHubIcon htmlColor="#fff" fontSize="large" />
+          </Link>
         </NavbarContainer>
       </Toolbar>
     </NavbarStyled>

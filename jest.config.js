@@ -8,7 +8,14 @@ module.exports = {
       '<rootDir>/__mocks__/fileMock.js',
     '^.+\\.svg$': '<rootDir>/svgTransform.js',
     '\\.(css|less)$': 'identity-obj-proxy',
+    '^(\\.{1,2}/.*)\\.js$': '$1',
   },
   testPathIgnorePatterns: ['<rootDir>/svgTransform.js'],
   coveragePathIgnorePatterns: ['<rootDir>/svgTransform.js'],
+  extensionsToTreatAsEsm: ['.ts'],
+  globals: {
+    'ts-jest': {
+      useESM: true,
+    },
+  },
 }

@@ -7,6 +7,13 @@ import { baseUrlPath } from './src/constants'
 export default ({ mode }: { mode: string }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
+  const app_env = Object.entries(env).reduce(
+    (acc, [key, value]) => {
+      return key.toLowerCase().startsWith('vite_') ? { ...acc, [key]: value } : acc
+    },
+    { MODE: mode },
+  )
+
   return defineConfig({
     base: baseUrlPath + '/',
     plugins: [reactRefresh(), tsconfigPaths()],
@@ -16,7 +23,9 @@ export default ({ mode }: { mode: string }) => {
       },
     },
     define: {
-      __APP_ENV__: env.APP_ENV,
+      process: {
+        env: app_env,
+      },
     },
   })
 }
