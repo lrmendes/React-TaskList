@@ -1,3 +1,5 @@
+export const baseUrlPath = '/React-TaskList'
+
 export const tags = [
   'React',
   'TypeScript',

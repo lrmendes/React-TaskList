@@ -2,9 +2,10 @@
   "name": "react-task-list",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "npm run lint && tsc && vite build",
+    "dev": "vite --mode dev",
+    "start": "vite --mode dev",
+    "build": "npm run lint && tsc && vite build --mode prod",
+    "build:gh": "vite build --mode gh_pages",
     "preview": "vite preview",
     "test": "jest --coverage --coverageDirectory ../coverage --passWithNoTests",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --fix --ignore-path ./.gitignore",
