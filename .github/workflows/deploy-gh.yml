@@ -15,14 +15,15 @@ jobs:
         node-version: [15.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Install & Build APP
         run: |
           npm ci
           npm run build
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.7
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
           folder: dist
