@@ -1,3 +1,4 @@
+import { baseUrlPath } from 'constants'
 import React from 'react'
 import { BrowserRouter, Navigate } from 'react-router-dom'
 import { Route, Routes as ReactRoutes } from 'react-router-dom'
@@ -11,9 +12,9 @@ const Router = () => {
     <BrowserRouter>
       <ReactRoutes>
         <Route element={<Layout />}>
-          <Route path="/home" element={<Home />} />
-          <Route path="/tasks" element={<Tasks />} />
-          <Route path="*" element={<Navigate to="/home" replace />} />
+          <Route path={`${baseUrlPath}/home`} element={<Home />} />
+          <Route path={`${baseUrlPath}/tasks`} element={<Tasks />} />
+          <Route path="*" element={<Navigate to={`${baseUrlPath}/home`} replace />} />
         </Route>
       </ReactRoutes>
     </BrowserRouter>
