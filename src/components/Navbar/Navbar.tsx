@@ -1,9 +1,9 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
 import MenuIcon from '@mui/icons-material/Menu'
 import { IconButton, Link, Toolbar, Typography } from '@mui/material'
-import { GITHUB_REPOSITORY } from 'constants'
 import * as React from 'react'
 
+import { GITHUB_REPOSITORY } from '../../constants'
 import { NavbarContainer, NavbarStyled, NavbarTitleMenu } from './Navbar.styles'
 
 interface Props {

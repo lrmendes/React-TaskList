@@ -11,4 +11,5 @@ module.exports = {
   },
   testPathIgnorePatterns: ['<rootDir>/svgTransform.js'],
   coveragePathIgnorePatterns: ['<rootDir>/svgTransform.js'],
+  automock: false,
 }

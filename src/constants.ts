@@ -1,6 +1,6 @@
 export const baseUrlPath = '/React-TaskList'
 
-export const BACKEND_API = 'http://localhost:3008/api/'
+export const BACKEND_API = 'http://localhost:3008/api'
 export const GITHUB_REPOSITORY = 'https://github.com/lrmendes/React-TaskList'
 
 export const tags = [
@@ -10,5 +10,7 @@ export const tags = [
   'Styled Components',
   'CSS Modules',
   'Github Actions',
+  'CI/CD',
+  'React Query',
   'Testing',
 ]

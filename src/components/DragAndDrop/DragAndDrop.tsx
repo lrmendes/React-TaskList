@@ -11,6 +11,10 @@ interface Props {
 const DragAndDrop = ({ listItems, children }: Props) => {
   const [dragListItems, setDragListItems] = React.useState(listItems)
 
+  React.useEffect(() => {
+    setDragListItems(listItems)
+  }, [listItems])
+
   const onDragStart = () => {
     if (window.navigator.vibrate) {
       window.navigator.vibrate(100)
