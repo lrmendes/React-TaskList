@@ -1,9 +1,9 @@
-import { baseUrlPath } from 'constants'
 import React from 'react'
 import { BrowserRouter, Navigate } from 'react-router-dom'
 import { Route, Routes as ReactRoutes } from 'react-router-dom'
 
 import Layout from '../components/Layout'
+import { baseUrlPath } from '../constants'
 import Home from '../pages/Home'
 import Tasks from '../pages/Tasks'
 
