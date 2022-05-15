@@ -32,7 +32,7 @@ const Navbar = ({ switchMenu }: Props) => {
             </Typography>
           </NavbarTitleMenu>
           <Link
-            href={import.meta && import.meta.env?.VITE_GITHUB_REPOSITORY}
+            href={process?.env?.VITE_GITHUB_REPOSITORY}
             target="_blank"
             rel="noreferrer"
           >
