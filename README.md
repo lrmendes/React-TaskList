@@ -22,6 +22,10 @@ A simple Task List application built in React, using different technologies and 
 
 ![Tasks page displaying the task list](resources/tasks-page.gif)
 
+##### :fire: Tasks Page: Drag and Drop
+
+![Tasks page displaying an error message](resources/drag-drop.gif)
+
 ##### :fire: Tasks Page: Error handling
 
 ![Tasks page displaying an error message](resources/tasks-error.gif)
