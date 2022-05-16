@@ -16,6 +16,24 @@ A simple Task List application built in React, using different technologies and 
   - :cloud: Perform Test, Lint and Build validations in each PR
   - :cloud: Deploy to GitHub pages after merging to master
 
+## :tada: Application overview
+
+##### :fire: Tasks Page: Fetching from API
+
+![Tasks page displaying the task list](resources/tasks-page.gif)
+
+##### :fire: Tasks Page: Error handling
+
+![Tasks page displaying an error message](resources/tasks-error.gif)
+
+##### :fire: Tests
+
+![Table of tests](resources/tests.png)
+
+##### :fire: CI/CD
+
+![Workflow list of CI/CD process](resources/ci_cd.png)
+
 ## :running: Running Application
 
 1. Clone this repository.
