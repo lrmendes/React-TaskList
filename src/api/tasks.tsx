@@ -17,5 +17,6 @@ const getTasksAPI = async () => {
 export const useTasks = () => {
   return useQuery(['tasks'], () => getTasksAPI(), {
     retry: false,
+    refetchOnWindowFocus: false,
   })
 }
