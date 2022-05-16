@@ -48,14 +48,14 @@ const Tasks = () => {
         </Alert>
       ) : (
         <div className={styles.container}>
-          <Card title={`NOT COMPLETED (${completed.length})`}>
-            <DragAndDrop listItems={completed}>
+          <Card title={`NOT COMPLETED (${notCompleted.length})`}>
+            <DragAndDrop listItems={notCompleted}>
               <TaskList />
             </DragAndDrop>
           </Card>
 
-          <Card title={`COMPLETED (${notCompleted.length})`}>
-            <DragAndDrop listItems={notCompleted}>
+          <Card title={`COMPLETED (${completed.length})`}>
+            <DragAndDrop listItems={completed}>
               <TaskList />
             </DragAndDrop>
           </Card>
